@@ -7,7 +7,7 @@ import { GlassContainer } from '@/components/ui/GlassContainer';
 
 export const metadata: Metadata = {
   title: 'Contact Us | AppCloid Technologies',
-  description: 'Get in touch with AppCloid Technologies. Based in Glasgow, we provide bespoke AI, software development, and digital transformation services across the UK.',
+  description: 'Get in touch with AppCloid Technologies. We provide bespoke AI, software development, and digital transformation services across the UK.',
 };
 
 export default function ContactPage() {
@@ -23,9 +23,6 @@ export default function ContactPage() {
       email: 'contact@appcloid.com',
       address: {
         '@type': 'PostalAddress',
-        addressLocality: 'Newton Mearns',
-        addressRegion: 'Glasgow',
-        postalCode: 'G77 5TA',
         addressCountry: 'UK'
       }
     }
@@ -69,9 +66,7 @@ export default function ContactPage() {
                   <h4 className="text-sm font-bold uppercase tracking-widest text-purple mb-2">Headquarters</h4>
                   <address className="not-italic text-bluegrey-300 leading-relaxed text-lg">
                     AppCloid Technologies<br />
-                    Newton Mearns<br />
-                    Glasgow, G77 5TA<br />
-                    United Kingdom
+                    Serving the United Kingdom<br />
                   </address>
                 </div>
 

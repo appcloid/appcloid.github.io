@@ -10,8 +10,8 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'AppCloid Technologies | Enterprise AI & Bespoke Software in Glasgow',
-  description: 'AppCloid Technologies democratizes elite, AI-first software solutions for SMBs across the UK. Based in Glasgow, we build high-performance web, mobile, and AI infrastructure.',
+  title: 'AppCloid Technologies | Enterprise AI & Bespoke Software',
+  description: 'AppCloid Technologies democratizes elite, AI-first software solutions for SMBs across the UK. We build high-performance web, mobile, and AI infrastructure.',
 };
 
 export default function RootLayout({

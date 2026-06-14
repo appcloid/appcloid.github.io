@@ -20,7 +20,7 @@ export const HeroSection = () => {
         </h1>
         
         <p className="text-lg md:text-2xl text-bluegrey-300 max-w-3xl mx-auto mb-12 leading-relaxed">
-          Based in Glasgow, AppCloid Technologies democratises elite, AI-first software solutions. 
+          AppCloid Technologies democratises elite, AI-first software solutions. 
           We engineer bespoke platforms that eliminate operational bottlenecks and drive unprecedented growth.
         </p>
 

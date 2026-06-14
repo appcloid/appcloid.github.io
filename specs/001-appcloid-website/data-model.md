@@ -36,7 +36,7 @@ Represents a single AI capability or traditional service offering.
 | `id` | `string` | Unique slug, e.g. `"rag-architecture"` |
 | `title` | `string` | Short technical label |
 | `summary` | `string` | ≤ 20 words; plain-language business value statement |
-| `detail` | `string` | Full explanation with a UK business example; ≤ 150 words |
+| `detail` | `string` | Full explanation highlighting StudyStride use cases; ≤ 150 words |
 | `icon` | `ReactNode` | Thin-line SVG icon component |
 | `category` | `"ai" \| "traditional"` | Determines which page renders the card |
 
@@ -92,7 +92,7 @@ SEO metadata object generated per page via Next.js Metadata API.
 
 ## Static Data Collections
 
-### Industries (9 entries — `src/data/industries.ts`)
+### Industries (9 entries — `src/data/industries.tsx`)
 
 | id | Sector |
 |----|--------|
@@ -106,7 +106,7 @@ SEO metadata object generated per page via Next.js Metadata API.
 | `real-estate` | Real Estate & Property Management |
 | `healthcare` | Healthcare & Wellness |
 
-### AI Services (6 entries — `src/data/ai-services.ts`)
+### AI Services (6 entries — `src/data/ai-services.tsx`)
 
 | id | Title |
 |----|-------|
@@ -117,7 +117,7 @@ SEO metadata object generated per page via Next.js Metadata API.
 | `prompt-engineering` | Advanced Prompt Engineering |
 | `ai-first-dev` | AI-First Web & Mobile App Development |
 
-### Traditional Services (5 entries — `src/data/services.ts`)
+### Traditional Services (5 entries — `src/data/services.tsx`)
 
 | id | Title |
 |----|-------|

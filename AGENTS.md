@@ -3,7 +3,7 @@
 # AppCloid Technologies — Agent Context
 
 ## Project Overview
-- **Company**: AppCloid Technologies Pvt Ltd, Glasgow, Scotland (serving the entire UK)
+- **Company**: AppCloid Technologies Pvt Ltd (serving the entire UK)
 - **Mission**: Democratize elite, AI-first technology for SMBs across the UK.
 - **Website goal**: The site is the ultimate proof of our engineering competence — zero bugs, instantly responsive, visually mesmerizing.
 - **Constitution**: Read `.specify/memory/constitution.md` for the full, authoritative rulebook.
@@ -29,7 +29,7 @@ Build strictly modular, reusable components: `<GlossyButton/>`, `<IndustryCard/>
 Follow DRY principles. Every component MUST be independently testable.
 
 ## Tone of Voice
-- Authoritative, innovative, approachable, distinctly British/Scottish.
+- Authoritative, innovative, approachable, clear, and to the point.
 - Speak to the business owner's bottom line — clarity over jargon.
 - Engaging microcopy (e.g. "Start Your Transformation", not "Submit").
 

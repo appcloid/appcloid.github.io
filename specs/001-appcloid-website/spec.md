@@ -6,7 +6,7 @@
 
 **Status**: Draft
 
-**Input**: Full website rebuild for AppCloid Technologies Pvt Ltd — a premium AI-first IT firm based in Glasgow, Scotland, serving the entire UK.
+**Input**: Full website rebuild for AppCloid Technologies Pvt Ltd — a premium AI-first IT firm providing AI solutions and services.
 
 ---
 
@@ -19,8 +19,8 @@
 - Q: How do industry cards reveal their detailed use cases? → A: Expand in-place — the card flips, expands, or reveals detail below itself on click, keeping the visitor on the same page.
 - Q: What is the mobile navigation pattern? → A: Hamburger icon that opens a full-height slide-out drawer from the right edge, animated with a glassmorphism overlay.
 - Q: What language and locale does the site use? → A: UK English only (en-GB), single locale — no internationalisation infrastructure required.
-- Q: What are AppCloid's real business contact details? → A: Email: `contact@appcloid.com` · Address: Newton Mearns, Glasgow, G77 5TA.
-- Q: Who writes the website copy? → A: The agent writes all copy — every headline, description, industry use case, AI capability explanation, and About page narrative — using the AppCloid brand voice (authoritative, innovative, approachable, distinctly British/Scottish).
+- Q: What are AppCloid's real business contact details? → A: Email: `contact@appcloid.com`.
+- Q: Who writes the website copy? → A: The agent writes all copy — every headline, description, industry use case, AI capability explanation, and About page narrative — using the AppCloid brand voice (authoritative, innovative, approachable, clear, and to the point).
 - Q: What social media links should be in the footer? → A: Use realistic placeholders for now (e.g., `https://linkedin.com/company/appcloid`); the URLs will be updated later.
 - Q: Should analytics be integrated? → A: Yes, Google Analytics (GA4) using the provided measurement ID `G-0LB5NZPPR2`.
 
@@ -93,15 +93,15 @@ A visitor from a specific sector (e.g. the construction trades or the healthcare
 
 ### User Story 5 — Visitor Learns About AppCloid's Background (Priority: P4)
 
-A potential enterprise partner or media professional wants to understand AppCloid's story, its Glasgow heritage, and its commitment to technical excellence before recommending or partnering with them.
+A potential enterprise partner or media professional wants to understand AppCloid's story and its commitment to technical excellence before recommending or partnering with them.
 
 **Why this priority**: Trust signals and brand narrative are critical at the later stages of a buying decision, particularly for larger contracts.
 
-**Independent Test**: A visitor can read the About page and come away with a clear understanding of AppCloid's founding story, location, UK reach, and ethos — without needing to visit any other page.
+**Independent Test**: A visitor can read the About page and come away with a clear understanding of AppCloid's founding mission, reach, and ethos — without needing to visit any other page.
 
 **Acceptance Scenarios**:
 
-1. **Given** a visitor lands on the About page, **When** they read through it, **Then** they learn that AppCloid is headquartered in Glasgow, serves the entire UK, and is committed to top-tier engineering standards.
+1. **Given** a visitor lands on the About page, **When** they read through it, **Then** they learn that AppCloid serves the entire UK and is committed to top-tier engineering standards.
 
 ---
 
@@ -124,7 +124,7 @@ A potential enterprise partner or media professional wants to understand AppCloi
 - **FR-004**: The Traditional Services page MUST present Bespoke Back-Office Systems, Social Media Management, SEO & Digital Marketing, Web Development, and Mobile App Development as clearly separated service sections.
 - **FR-005**: The Industries page MUST include dedicated interactive cards for all nine target industries: Restaurants/Hospitality/Takeaways, Construction & Trades, Fashion & Boutique, Educational Institutes, Security Firms, Banks & Financial Institutes, Science & Technology, Real Estate & Property Management, and Healthcare & Wellness. Each card MUST expand or flip in-place on click/tap to reveal its use cases, without routing to a separate page.
 - **FR-006**: Each industry entry on the Industries page MUST include at least two specific use cases showing how AppCloid's services benefit that sector.
-- **FR-007**: The About page MUST include AppCloid's Glasgow headquarters, UK-wide reach, founding mission, and commitment to technical excellence.
+- **FR-007**: The About page MUST include AppCloid's UK-wide reach, founding mission, and commitment to technical excellence.
 - **FR-008**: The Contact page MUST include a lead-capture form collecting at minimum the visitor's name, company name, email address, industry sector, and a message/enquiry field.
 - **FR-009**: The contact form MUST validate all required fields before submission and display clear, inline error messages for missing or invalid inputs.
 - **FR-010**: The site MUST display a branded 404 error page with navigation links back to the main sections.
@@ -136,8 +136,9 @@ A potential enterprise partner or media professional wants to understand AppCloi
 - **FR-016**: The contact form MUST submit enquiries via EmailJS, sending results directly to a configured AppCloid email address with no server-side backend.
 - **FR-017**: The site MUST be exportable as a fully static build compatible with GitHub Pages hosting (no runtime server-side rendering).
 - **FR-018**: The site MUST use UK English (en-GB) as the sole language and locale; no internationalisation (i18n) or multi-language infrastructure is required.
-- **FR-019**: The Contact page and About page MUST display AppCloid's real business contact details: email `contact@appcloid.com` and address Newton Mearns, Glasgow, G77 5TA. These details MUST also be encoded in the `LocalBusiness` Schema.org JSON-LD structured data.
+- **FR-019**: The Contact page and About page MUST display AppCloid's real business contact details: email `contact@appcloid.com`. These details MUST also be encoded in the `LocalBusiness` Schema.org JSON-LD structured data.
 - **FR-020**: The site MUST integrate Google Analytics (GA4) using measurement ID `G-0LB5NZPPR2` across all pages.
+- **FR-021**: The AI Solutions section MUST showcase "StudyStride" as the primary real-world application case study across its capabilities (e.g., Autonomous AI agents recommending topics, Computer Vision marking solutions from pictures, NLP creating coursework, Predictive Analytics ranking students and preparing reports, Intelligent Automation delivering lectures and sending notifications, Generative AI creating text/images/presentations). Exact percentages and references to "Scottish client" MUST NOT be used.
 
 ### Key Entities
 
@@ -168,7 +169,7 @@ A potential enterprise partner or media professional wants to understand AppCloi
 
 - The site will be statically exported and hosted on GitHub Pages; no runtime server-side rendering is required or available.
 - No user authentication or login system is required for the initial launch; the contact form uses EmailJS to deliver enquiries directly to the AppCloid team's email address from the browser.
-- All copy and imagery assets will be written by the agent using the AppCloid brand voice (authoritative, innovative, approachable, British/Scottish) and generated as part of the build process; no external CMS or content editing interface is required for v1. The user will review copy before launch.
+- All copy and imagery assets will be written by the agent using the AppCloid brand voice (authoritative, innovative, approachable, clear) and generated as part of the build process; no external CMS or content editing interface is required for v1. The user will review copy before launch.
 - Social media links in the footer will be placeholder links until live accounts are confirmed.
 - The nine target industries represent the complete list for v1; additional sectors may be added in future iterations.
 - Google Analytics (GA4) is integrated natively via Next.js third-parties library.

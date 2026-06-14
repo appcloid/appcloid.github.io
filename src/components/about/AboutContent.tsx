@@ -31,17 +31,14 @@ export const AboutContent = () => {
           </div>
         </SectionReveal>
 
-        {/* Glasgow Roots & UK Reach */}
+        {/* UK Reach */}
         <SectionReveal delay={0.2}>
           <GlassContainer className="bg-gradient-to-br from-white/5 to-cyan/5 border-cyan/20">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-2/3">
-                <h3 className="text-2xl font-bold text-white mb-4 font-space">Engineered in Glasgow, Impacting the UK</h3>
+                <h3 className="text-2xl font-bold text-white mb-4 font-space">Nationwide Impact</h3>
                 <p className="text-bluegrey-300 leading-relaxed mb-4">
-                  Headquartered in <strong>Newton Mearns, Glasgow (G77 5TA)</strong>, AppCloid is proudly rooted in Scotland's burgeoning tech ecosystem. 
-                </p>
-                <p className="text-bluegrey-300 leading-relaxed">
-                  While our engineering hub is in Glasgow, our digital footprint spans the entire United Kingdom. We partner with clinics in London, logistics firms in Manchester, and retailers in Edinburgh—delivering transformative digital infrastructure wherever you operate.
+                  Our digital footprint spans the entire United Kingdom. We partner with clinics in London, logistics firms in Manchester, and retailers nationwide—delivering transformative digital infrastructure wherever you operate.
                 </p>
               </div>
               <div className="md:w-1/3 flex flex-col items-center justify-center p-6 bg-midnight/50 rounded-xl border border-white/5">

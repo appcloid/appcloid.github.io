@@ -51,7 +51,7 @@ export const Footer = () => {
             <h4 className="text-white font-bold mb-4 uppercase tracking-wider text-sm">Contact Us</h4>
             <address className="not-italic text-sm text-bluegrey-500 space-y-2">
               <p className="flex items-center">
-                <span className="text-cyan mr-2">📍</span> Newton Mearns, Glasgow, G77 5TA
+                <span className="text-cyan mr-2">📍</span> Serving the United Kingdom
               </p>
               <p className="flex items-center">
                 <span className="text-cyan mr-2">✉️</span> contact@appcloid.com
@@ -67,7 +67,7 @@ export const Footer = () => {
             &copy; {new Date().getFullYear()} AppCloid Technologies Pvt Ltd. All rights reserved.
           </p>
           <p className="text-bluegrey-700 text-sm mt-2 md:mt-0">
-            Designed & Engineered in Glasgow.
+            Designed & Engineered in the UK.
           </p>
         </div>
       </div>
