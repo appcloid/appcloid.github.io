@@ -1,50 +1,62 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- 
+Sync Impact Report:
+Version change: 0.0.0 -> 1.0.0
+Modified principles:
+- [PRINCIPLE_1_NAME] -> I. Core Vision & Mandate
+- [PRINCIPLE_2_NAME] -> II. The "Highly Glossy" Design System
+- [PRINCIPLE_3_NAME] -> III. Technical Architecture & Coding Standards
+- [PRINCIPLE_4_NAME] -> IV. Tone of Voice & Copywriting
+- [PRINCIPLE_5_NAME] -> V. Quality Assurance & Non-Negotiables
+Removed sections:
+- [SECTION_2_NAME]
+- [SECTION_3_NAME]
+Templates requiring updates:
+- .specify/templates/plan-template.md (✅ checked - generic placeholders retained)
+- .specify/templates/spec-template.md (✅ checked - generic placeholders retained)
+- .specify/templates/tasks-template.md (✅ checked - generic placeholders retained)
+Deferred items: None
+-->
+# AppCloid Technologies Pvt Ltd Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Core Vision & Mandate
+**The Mission:** To democratize elite, AI-first technology for small-to-medium businesses (SMBs) across the UK.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+**The Standard:** As an IT firm building software for others, our own website MUST be the ultimate proof of our competence. It MUST represent the pinnacle of modern web engineering—zero bugs, instantly responsive, and visually mesmerizing.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+**Target Audience:** Non-technical business owners and corporate decision-makers alike. The site MUST impress the technical and clearly communicate value to the non-technical.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### II. The "Highly Glossy" Design System
+All UI elements MUST strictly adhere to a high-end, premium aesthetic.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+- **Color Palette (Premium Dark Mode Default):** Primary Backgrounds: Deep Midnight Blue (#0B0C10) to Rich Obsidian (#121212). Primary Accents: Electric Cyan (#66FCF1) and Neon Purple (#BB86FC) for gradients, glowing effects, and primary CTAs. Surface Elements: Glassmorphism overlays (translucent, blurred backgrounds with subtle 1px frosted white borders).
+- **Typography:** Headings: A bold, geometric sans-serif (e.g., Inter, Plus Jakarta Sans, or Space Grotesk) utilizing tight tracking and high contrast. Body Copy: Highly legible, clean sans-serif (e.g., Roboto or SF Pro) scaled perfectly for readability across all devices.
+- **Imagery & Iconography:** NO generic stock photos. Use high-fidelity 3D renders, sleek abstract geometry, and bespoke, thin-line glowing icons for the "Industries Served" section.
+- **Motion & Interactivity:** All animations MUST be physics-based and render at a buttery 60fps+. Hover states SHOULD feature subtle scaling, glow intensification, and magnetic cursor effects. Use scroll-linked animations to reveal sections gracefully—never abruptly.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### III. Technical Architecture & Coding Standards
+The codebase MUST be pristine, scalable, and modern.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+- **Tech Stack:** React-based framework (Next.js strongly preferred for SEO and Server-Side Rendering), TypeScript for type safety, and Tailwind CSS for utility-first, highly customizable styling.
+- **Animation Libraries:** Framer Motion or GSAP for complex sequence animations.
+- **Component Architecture:** Strictly modular. Build reusable components (e.g., `<GlossyButton/>`, `<IndustryCard/>`, `<GlassContainer/>`) following DRY principles.
+- **State Management:** Keep it lightweight; use React Context or Zustand where necessary.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### IV. Tone of Voice & Copywriting
+- **Vibe:** Authoritative, innovative, approachable, and distinctly British/Scottish in its grounded honesty.
+- **Clarity Over Jargon:** While the design is highly technical, the copy MUST speak directly to the business owner's bottom line. (e.g., "We build AI systems that write your social media posts, manage your bookings, and save you 20 hours a week" instead of "We implement LLM-driven deterministic APIs").
+- **Microcopy:** Buttons and forms MUST be engaging (e.g., "Start Your Transformation" instead of "Submit").
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### V. Quality Assurance & Non-Negotiables
+- **Performance:** The site MUST achieve a 95–100 across all metrics (Performance, Accessibility, Best Practices, SEO) on Google Lighthouse.
+- **Responsive Integrity:** Mobile-first design is mandatory. The "glossy" feel MUST NOT degrade on smaller screens. Menus, grids, and 3D elements MUST collapse or simplify elegantly.
+- **Accessibility (a11y):** Strict adherence to WCAG 2.1 AA standards. Ensure high color contrast for text, keyboard navigability, and ARIA labels for all interactive elements.
+- **Bug-Free Guarantee:** Zero console errors, zero broken links, and robust error-boundary handling.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution acts as the definitive rulebook for the brand's digital identity, technical standards, and design system. It supersedes all other practices. Every line of code and UI element MUST align perfectly with this premium, "glossy" vision.
+Amendments require team consensus, documentation of the rationale, and a semantic version bump.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-06-14 | **Last Amended**: 2026-06-14

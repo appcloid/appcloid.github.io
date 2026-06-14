@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md;
+  }
+  .glass-border {
+    @apply border border-white/10;
+  }
+  .glow-cyan {
+    @apply shadow-cyan-glow;
+  }
+  .glow-purple {
+    @apply shadow-purple-glow;
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+}
+
+body {
+  @apply bg-midnight text-white antialiased selection:bg-cyan selection:text-midnight;
+}
