@@ -119,9 +119,9 @@ appcloid.com/
 │   │   └── contact/
 │   │       └── ContactForm.tsx
 │   ├── data/
-│   │   ├── industries.ts
-│   │   ├── ai-services.ts
-│   │   └── services.ts
+│   │   ├── industries.tsx
+│   │   ├── ai-services.tsx
+│   │   └── services.tsx
 │   ├── hooks/
 │   │   └── useReducedMotion.ts
 │   ├── lib/
@@ -162,9 +162,9 @@ Build the hero section, industry ticker, and value proposition section that form
 
 ### Phase 3 — AI Solutions Page (P2 — Technical Credibility)
 
-Build the AI capabilities grid with expandable `AICapabilityCard` components.
+Build the AI capabilities grid with expandable `AICapabilityCard` components, heavily featuring the "StudyStride" autonomous web application as the primary case study across all capabilities.
 
-**Key deliverables**: 6 × `AICapabilityCard` (collapsed → expanded on click/tap), page-level metadata, JSON-LD `Service` structured data.
+**Key deliverables**: 6 × `AICapabilityCard` (collapsed → expanded on click/tap) referencing StudyStride use cases, page-level metadata, JSON-LD `Service` structured data.
 
 ---
 
@@ -188,7 +188,7 @@ Build the 9-card flip grid.
 
 Build the About page content.
 
-**Key deliverables**: `AboutContent` (Glasgow story, UK reach, ethos), `LocalBusiness` JSON-LD structured data, page metadata.
+**Key deliverables**: `AboutContent` (UK reach, ethos), `LocalBusiness` JSON-LD structured data, page metadata.
 
 ---
 

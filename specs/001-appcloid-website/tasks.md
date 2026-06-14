@@ -32,14 +32,14 @@ description: "Task list for AppCloid Technologies Website implementation"
 - [x] T006 [P] Create `src/styles/globals.css` with Tailwind directives and custom glassmorphism utility classes (`.glass`, `.glass-border`, `.glow-cyan`, `.glow-purple`)
 - [x] T007 [P] Create `src/types/index.ts` with all shared TypeScript interfaces: `IndustryCard`, `ServiceCard`, `NavLink`, `ContactFormData`, `PageMeta`
 - [x] T008 [P] Create `src/hooks/useReducedMotion.ts` wrapping Framer Motion's `useReducedMotion` hook for sitewide reduced-motion compliance
-- [x] T009 [P] Create `src/data/industries.ts` with all nine industry entries (id, sector, useCases × 2+, accentColor, icon referencing components from `src/components/icons/`)
-- [x] T010 [P] Create `src/data/ai-services.ts` with all six AI capability entries (id, title, summary, detail, category: 'ai', icon referencing components from `src/components/icons/`)
-- [x] T011 [P] Create `src/data/services.ts` with all five traditional service entries (id, title, summary, detail, category: 'traditional', icon referencing components from `src/components/icons/`)
+- [x] T009 [P] Create `src/data/industries.tsx` with all nine industry entries (id, sector, useCases × 2+, accentColor, icon referencing components from `src/components/icons/`)
+- [x] T010 [P] Create `src/data/ai-services.tsx` with all six AI capability entries integrating StudyStride as the primary case study (id, title, summary, detail, category: 'ai', icon referencing components from `src/components/icons/`)
+- [x] T011 [P] Create `src/data/services.tsx` with all five traditional service entries (id, title, summary, detail, category: 'traditional', icon referencing components from `src/components/icons/`)
 - [x] T012 [P] Create `src/lib/emailjs.ts` with the `sendEnquiry(data: ContactFormData)` helper wrapping `emailjs.sendForm()`; all three config values (`SERVICE_ID`, `TEMPLATE_ID`, `PUBLIC_KEY`) sourced from `process.env.NEXT_PUBLIC_*` — none hardcoded
 - [x] T013 [P] Create `.env.local` template (`.env.local.example`) with `NEXT_PUBLIC_EMAILJS_SERVICE_ID`, `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID`, `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY`
 - [x] T014 [P] Create `.github/workflows/deploy.yml` stub file (full configuration finalised in T045); trigger: push to `new-site`; steps placeholder: checkout → setup-node → build → upload-pages-artifact → deploy-pages (GitHub Actions source model, NOT gh-pages branch push)
 - [x] T015 [P] Create `public/CNAME` file (placeholder for custom domain) and `public/favicon.ico`
-- [x] T041 [P] Create all thin-line SVG icon components in `src/components/icons/` — one unique glowing icon per industry (9) and per service (11 total); export each as a named React component; import into `src/data/industries.ts`, `src/data/ai-services.ts`, `src/data/services.ts` replacing placeholder references *(moved from Phase 9 — icons MUST exist before any component that renders them is built)*
+- [x] T041 [P] Create all thin-line SVG icon components in `src/components/icons/` — one unique glowing icon per industry (9) and per service (11 total); export each as a named React component; import into `src/data/industries.tsx`, `src/data/ai-services.tsx`, `src/data/services.tsx` replacing placeholder references *(moved from Phase 9 — icons MUST exist before any component that renders them is built)*
 
 **Checkpoint**: Project runs locally with `npm run dev` and builds cleanly with `npm run build`. Design tokens are visible in Tailwind IntelliSense. All 20 SVG icon components exist and import correctly from `src/components/icons/`.
 
@@ -57,7 +57,7 @@ description: "Task list for AppCloid Technologies Website implementation"
 - [x] T019 Create `src/components/layout/MobileDrawer.tsx` — add `'use client'` directive at top; full-height glassmorphism panel slides in from right edge via Framer Motion `x` transform; use `focus-trap-react` `<FocusTrap>` wrapper to trap keyboard focus inside drawer while open; overlay dismisses on click; closes on `Escape` key; instant (no animation) under reduced motion
 - [x] T020 Create `src/components/layout/Navbar.tsx` — add `'use client'` directive at top (uses scroll listener and drawer state); sticky top bar; glassmorphism background appears on scroll > 50px; all six nav links visible on desktop (≥ 768px); hamburger icon on mobile triggers `MobileDrawer`; active route highlighted; includes "Start Your Transformation" CTA `GlossyButton`; nav links: Home `/`, AI Solutions `/ai-solutions`, Services `/services`, Industries `/industries`, About `/about`, Contact `/contact`
 - [x] T021 [P] Create `src/components/layout/Footer.tsx` — dark footer with brand logo, nav links, social media placeholder links, copyright, and "en-GB" lang declaration
-- [x] T022 Create `src/app/layout.tsx` — root layout: `<html lang="en-GB">`, `next/font` loading (Inter for headings, Roboto for body), `<Navbar />`, `<Footer />`, sitewide `Organization` JSON-LD (name: "AppCloid Technologies", url: site URL, address: Newton Mearns, Glasgow, G77 5TA, email: contact@appcloid.com), global metadata defaults, and `<GoogleAnalytics gaId="G-0LB5NZPPR2" />` from `@next/third-parties/google`
+- [x] T022 Create `src/app/layout.tsx` — root layout: `<html lang="en-GB">`, `next/font` loading (Inter for headings, Roboto for body), `<Navbar />`, `<Footer />`, sitewide `Organization` JSON-LD (name: "AppCloid Technologies", url: site URL, email: contact@appcloid.com, areaServed: GB), global metadata defaults, and `<GoogleAnalytics gaId="G-0LB5NZPPR2" />` from `@next/third-parties/google`
 
 **Checkpoint**: Navigate to `http://localhost:3000` — the Navbar and Footer render correctly. Mobile hamburger opens/closes the drawer. Focus trap works on keyboard.
 
@@ -71,7 +71,7 @@ description: "Task list for AppCloid Technologies Website implementation"
 
 ### Implementation for User Story 1
 
-- [x] T023 [US1] Create `src/components/home/HeroSection.tsx` — add `'use client'` directive at top; full-viewport-height section: animated abstract SVG geometry (Blue-Grey palette, CSS keyframe glow); headline ("Powering the UK's Most Ambitious Businesses With AI"); subheadline referencing Glasgow HQ and UK-wide reach; two `GlossyButton` CTAs ("Start Your Transformation" → `/contact`, "Explore AI Solutions" → `/ai-solutions`); `next/image` with `priority` for any hero asset; `SectionReveal` not applied to hero (visible immediately)
+- [x] T023 [US1] Create `src/components/home/HeroSection.tsx` — add `'use client'` directive at top; full-viewport-height section: animated abstract SVG geometry (Blue-Grey palette, CSS keyframe glow); headline ("Powering the UK's Most Ambitious Businesses With AI"); subheadline referencing UK-wide reach; two `GlossyButton` CTAs ("Start Your Transformation" → `/contact`, "Explore AI Solutions" → `/ai-solutions`); `next/image` with `priority` for any hero asset; `SectionReveal` not applied to hero (visible immediately)
 - [x] T024 [P] [US1] Create `src/components/home/IndustryTicker.tsx` — infinitely scrolling marquee of nine industry names using CSS animation (`animation: scroll linear infinite`); pauses on hover; renders as static comma-separated list when `useReducedMotion()` is true; accepts `items: string[]` and `speed?: number` props
 - [x] T025 [P] [US1] Create `src/components/home/ValueProposition.tsx` — three-column feature highlight grid (AI Agents, Bespoke Web/Apps, Digital Transformation) wrapped in `SectionReveal`; each column uses `GlassContainer`; `GlossyButton` secondary CTA at bottom
 - [x] T026 [US1] Create `src/app/page.tsx` — assembles `HeroSection`, `IndustryTicker`, `ValueProposition`; exports `metadata` (title: "AppCloid Technologies — AI-First IT for UK Businesses", description ≤ 160 chars); `WebPage` JSON-LD
@@ -88,8 +88,8 @@ description: "Task list for AppCloid Technologies Website implementation"
 
 ### Implementation for User Story 2
 
-- [x] T027 [US2] Create `src/components/ai-solutions/AICapabilityCard.tsx` — `GlassContainer`-based card; collapsed: shows icon + title + summary; click/tap expands (Framer Motion `AnimatePresence` height animation) to reveal `detail` text and a real-world UK business example; `chevron` icon rotates 180° on expand; ARIA `aria-expanded` attribute; keyboard-operable (Enter/Space toggles)
-- [x] T028 [US2] Create `src/app/ai-solutions/page.tsx` — hero banner ("Our AI Capabilities"); grid of six `AICapabilityCard` components sourced from `src/data/ai-services.ts`; `SectionReveal` per card row; closing `GlossyButton` primary CTA ("Start Your Transformation" → `/contact`); exports `metadata`; `Service` JSON-LD for each capability
+- [x] T027 [US2] Create `src/components/ai-solutions/AICapabilityCard.tsx` — `GlassContainer`-based card; collapsed: shows icon + title + summary; click/tap expands (Framer Motion `AnimatePresence` height animation) to reveal `detail` text and a real-world StudyStride example; `chevron` icon rotates 180° on expand; ARIA `aria-expanded` attribute; keyboard-operable (Enter/Space toggles)
+- [x] T028 [US2] Create `src/app/ai-solutions/page.tsx` — hero banner ("Our AI Capabilities"); grid of six `AICapabilityCard` components sourced from `src/data/ai-services.tsx`; `SectionReveal` per card row; closing `GlossyButton` primary CTA ("Start Your Transformation" → `/contact`); exports `metadata`; `Service` JSON-LD for each capability
 
 **Checkpoint**: VS-003 from `quickstart.md` passes. All six cards expand and collapse. CTA is visible.
 
@@ -104,7 +104,7 @@ description: "Task list for AppCloid Technologies Website implementation"
 ### Implementation for User Story 3
 
 - [x] T029 [US3] Create `src/components/services/ServiceBlock.tsx` — always-visible layout block (no expand/collapse); icon + title + summary + detail paragraph + `GlossyButton` secondary ("Discuss This Service" → `/contact`); alternating layout (icon-left / icon-right) on desktop; full-width stack on mobile; wrapped in `SectionReveal`
-- [x] T030 [US3] Create `src/app/services/page.tsx` — hero banner ("Our Services"); five `ServiceBlock` components sourced from `src/data/services.ts`; page-level `GlossyButton` primary CTA at bottom; exports `metadata`; `Service` JSON-LD for each service
+- [x] T030 [US3] Create `src/app/services/page.tsx` — hero banner ("Our Services"); five `ServiceBlock` components sourced from `src/data/services.tsx`; page-level `GlossyButton` primary CTA at bottom; exports `metadata`; `Service` JSON-LD for each service
 
 **Checkpoint**: All five service blocks visible with descriptions and CTAs. No expand/collapse interaction.
 
@@ -119,7 +119,7 @@ description: "Task list for AppCloid Technologies Website implementation"
 ### Implementation for User Story 4
 
 - [x] T031 [US4] Create `src/components/industries/IndustryCard.tsx` — CSS 3D card flip: front face (glowing icon + sector name + accent-colour border); back face (`GlassContainer` with `useCases` list + "flip back" `GlossyButton` ghost); `useState` boolean controls flip; Framer Motion `rotateY` for flip animation; instant toggle (no animation) under `useReducedMotion()`; ARIA `aria-pressed` on the card toggle; keyboard-operable (Enter/Space flips)
-- [x] T032 [US4] Create `src/app/industries/page.tsx` — hero banner ("Industries We Serve"); responsive grid (1-col mobile, 2-col tablet, 3-col desktop) of nine `IndustryCard` components sourced from `src/data/industries.ts`; `SectionReveal` on the grid; closing CTA section ("Don't see your industry? Let's talk." → `/contact`); exports `metadata`; `LocalBusiness` JSON-LD
+- [x] T032 [US4] Create `src/app/industries/page.tsx` — hero banner ("Industries We Serve"); responsive grid (1-col mobile, 2-col tablet, 3-col desktop) of nine `IndustryCard` components sourced from `src/data/industries.tsx`; `SectionReveal` on the grid; closing CTA section ("Don't see your industry? Let's talk." → `/contact`); exports `metadata`; `LocalBusiness` JSON-LD
 
 **Checkpoint**: VS-004 from `quickstart.md` passes. VS-005 (reduced motion) passes for card flip.
 
@@ -133,8 +133,8 @@ description: "Task list for AppCloid Technologies Website implementation"
 
 ### Implementation for User Story 5
 
-- [x] T033 [US5] Create `src/components/about/AboutContent.tsx` — narrative sections: founding story, Glasgow headquarters (Newton Mearns, Glasgow, G77 5TA), UK-wide reach, technical ethos, team/values; email: `contact@appcloid.com`; uses `GlassContainer` for callout blocks; `SectionReveal` on each section; "Partner With Us" `GlossyButton` primary CTA
-- [x] T034 [US5] Create `src/app/about/page.tsx` — assembles `AboutContent`; exports `metadata`; `ProfessionalService` + `LocalBusiness` JSON-LD with address: Newton Mearns, Glasgow, G77 5TA, email: contact@appcloid.com, `areaServed: "GB"`
+- [x] T033 [US5] Create `src/components/about/AboutContent.tsx` — narrative sections: founding story, UK-wide reach, technical ethos, team/values; email: `contact@appcloid.com`; uses `GlassContainer` for callout blocks; `SectionReveal` on each section; "Partner With Us" `GlossyButton` primary CTA
+- [x] T034 [US5] Create `src/app/about/page.tsx` — assembles `AboutContent`; exports `metadata`; `ProfessionalService` + `LocalBusiness` JSON-LD with addressCountry: UK, email: contact@appcloid.com, `areaServed: "GB"`
 
 **Checkpoint**: About page renders with all sections. JSON-LD validates in Google Rich Results Test.
 
@@ -149,7 +149,7 @@ description: "Task list for AppCloid Technologies Website implementation"
 ### Implementation
 
 - [x] T035 [US1] Create `src/components/contact/ContactForm.tsx` — controlled form with `useState` per field (`name`, `company`, `email`, `sector` dropdown of nine industries + "Other", `message`); client-side validation (required + email format + message min-length); inline per-field error messages; `submitting` / `success` / `error` state machine; submit button shows spinner during `submitting`, disabled; on success: renders success message and resets form; on error: renders error message and re-enables; uses `src/lib/emailjs.ts` helper; ARIA `aria-live="polite"` on status region
-- [x] T036 [US1] Create `src/app/contact/page.tsx` — hero banner ("Let's Talk"); conversational intro copy; `ContactForm`; fallback contact block: email `contact@appcloid.com`, address Newton Mearns, Glasgow, G77 5TA; exports `metadata`; `ContactPage` JSON-LD
+- [x] T036 [US1] Create `src/app/contact/page.tsx` — hero banner ("Let's Talk"); conversational intro copy; `ContactForm`; fallback contact block: email `contact@appcloid.com`, address Serving the United Kingdom; exports `metadata`; `ContactPage` JSON-LD
 
 **Checkpoint**: VS-006 from `quickstart.md` passes. Inline validation fires on blur and on submit. EmailJS delivers to configured inbox.
 

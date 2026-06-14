@@ -77,7 +77,7 @@ export const AICapabilityCard = ({ data }: AICapabilityCardProps) => {
                   <div className="bg-purple/10 border border-purple/20 rounded-xl p-4">
                     <h4 className="text-sm font-bold text-purple mb-1">UK Business Application:</h4>
                     <p className="text-sm text-bluegrey-300 italic">
-                      "Implementing {data.title.toLowerCase()} for a Scottish client resulted in an immediate 40% reduction in manual processing hours while ensuring full regulatory compliance."
+                      "Implementing {data.title.toLowerCase()} for our clients has resulted in immediate reductions in manual processing hours while ensuring full regulatory compliance."
                     </p>
                   </div>
                 </div>

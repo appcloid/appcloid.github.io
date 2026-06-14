@@ -23,9 +23,6 @@ export default function HomePage() {
     email: 'contact@appcloid.com',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Newton Mearns',
-      addressRegion: 'Glasgow',
-      postalCode: 'G77 5TA',
       addressCountry: 'UK'
     }
   };
